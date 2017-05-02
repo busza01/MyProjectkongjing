@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#56ffffff"
     tools:context="com.example.bus.myproject.Select">
 
     <TextView
@@ -14,56 +15,58 @@
         android:text="Search Flights"
         android:textColor="@android:color/holo_orange_dark"
         android:textSize="@dimen/h1"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.503" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/txtfrom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/my_margin"
+        android:layout_marginTop="15dp"
         android:text="Origin"
+        android:textColor="@android:color/holo_orange_dark"
         android:textSize="@dimen/h2"
+        app:layout_constraintHorizontal_bias="0.048"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        android:layout_marginTop="15dp"
-        app:layout_constraintHorizontal_bias="0.048" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Spinner
         android:id="@+id/fightfrom"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/my_margin"
+        android:layout_marginTop="15dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtfrom"
-        android:layout_marginTop="15dp" />
+        app:layout_constraintTop_toBottomOf="@+id/txtfrom" />
 
     <TextView
         android:id="@+id/txtto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/my_margin"
+        android:layout_marginTop="15dp"
         android:text="Destination"
+        android:textColor="@android:color/holo_orange_dark"
         android:textSize="@dimen/h2"
+        app:layout_constraintHorizontal_bias="0.056"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fightfrom"
-        android:layout_marginTop="15dp"
-        app:layout_constraintHorizontal_bias="0.056" />
+        app:layout_constraintTop_toBottomOf="@+id/fightfrom" />
 
     <Spinner
         android:id="@+id/fightto"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/my_margin"
+        android:layout_marginTop="15dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtto"
-        android:layout_marginTop="15dp" />
+        app:layout_constraintTop_toBottomOf="@+id/txtto" />
 
     <TextView
         android:id="@+id/textView2"
@@ -72,6 +75,7 @@
         android:layout_margin="@dimen/my_margin"
         android:layout_marginTop="23dp"
         android:text="Passenger"
+        android:textColor="@android:color/holo_orange_dark"
         android:textSize="@dimen/h2"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/numperson"
@@ -82,10 +86,10 @@
         android:layout_width="158dp"
         android:layout_height="39dp"
         android:layout_margin="@dimen/my_margin"
-        app:layout_constraintLeft_toRightOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/fightto"
         android:layout_marginTop="19dp"
-        app:layout_constraintRight_toLeftOf="@+id/textView3" />
+        app:layout_constraintLeft_toRightOf="@+id/textView2"
+        app:layout_constraintRight_toLeftOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/fightto" />
 
     <TextView
         android:id="@+id/textView3"
@@ -94,6 +98,7 @@
         android:layout_marginRight="33dp"
         android:layout_marginTop="23dp"
         android:text="Adult"
+        android:textColor="@android:color/holo_orange_dark"
         android:textSize="@dimen/h2"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fightto" />
@@ -104,6 +109,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="38dp"
         android:text="Day"
+        android:textColor="@android:color/holo_orange_dark"
         android:textSize="@dimen/h2"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/date"
@@ -115,8 +121,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="21dp"
         app:layout_constraintLeft_toRightOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/numperson"
-        app:layout_constraintRight_toLeftOf="@+id/month" />
+        app:layout_constraintRight_toLeftOf="@+id/month"
+        app:layout_constraintTop_toBottomOf="@+id/numperson" />
 
     <Spinner
         android:id="@+id/month"
@@ -124,8 +130,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="21dp"
         app:layout_constraintLeft_toRightOf="@+id/date"
-        app:layout_constraintTop_toBottomOf="@+id/numperson"
-        app:layout_constraintRight_toLeftOf="@+id/year" />
+        app:layout_constraintRight_toLeftOf="@+id/year"
+        app:layout_constraintTop_toBottomOf="@+id/numperson" />
 
     <Spinner
         android:id="@+id/year"
@@ -133,8 +139,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="21dp"
         app:layout_constraintLeft_toRightOf="@+id/month"
-        app:layout_constraintTop_toBottomOf="@+id/numperson"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numperson" />
 
     <Button
         android:id="@+id/button3"
@@ -142,6 +148,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/my_margin"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
@@ -151,10 +158,9 @@
         android:onClick="onsearchfight"
         android:text="Search"
         android:textColorLink="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/month"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="8dp" />
+        app:layout_constraintTop_toBottomOf="@+id/month" />
 
 </android.support.constraint.ConstraintLayout>
