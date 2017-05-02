@@ -5,17 +5,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class Information extends AppCompatActivity {
+public class Home extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_information);
+        setContentView(R.layout.activity_home);
     }
-    public void clsce (View view){
-        Intent onClickclsce = new Intent(Information.this,MainActivity.class);
 
-        startActivity(onClickclsce);
 
+    public void startapp (View view){
+        Intent onClickstartapp = new Intent(Home.this,Select.class);
+        startActivity(onClickstartapp);
     }
 }
